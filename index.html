@@ -292,7 +292,9 @@ $(document).ready(function() {
     var random = Math.round(-50+(Math.random()*100));
 
 	for(i = 0; i < $('.thumbnail').length; i++){
+
 		var img = document.getElementById(i);
+
 		if(img.clientHeight > img.clientWidth){
 			imageSizesHeights.push(img.clientHeight);
 		}
@@ -300,7 +302,9 @@ $(document).ready(function() {
 			imageSizesWidths.push(img.clientWidth);
 		} 	
 	    
-	    $('.thumbnail').css({'transform': 'rotation(' + random + ')'})
+	    var random = Math.round(-50+(Math.random()*100));
+
+	    $(img).css({'transform': 'rotate(' + random + 'deg)'})
 	}
 
 	imageSizesHeights.sort();
