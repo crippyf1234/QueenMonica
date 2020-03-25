@@ -38,10 +38,8 @@ body {
 
 .thumbnail {
 	background-color: #AC48E5;
-	transform: rotate(20deg);
+	transform: rotate(-20deg);
 	width: auto;
-    max-width: 150px;
-    max-height: 100px;
     display: block;
     margin: 0 auto;
 }

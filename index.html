@@ -287,18 +287,30 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 	var i;
-	var imageSizes = [];
+	var imageSizesHeights = [];
+	var imageSizesWidths = [];
+    var random = Math.round(-50+(Math.random()*100));
 
 	for(i = 0; i < $('.thumbnail').length; i++){
 		var img = document.getElementById(i);
-		imageSizes.push(img.clientHeight);
+		if(img.clientHeight > img.clientWidth){
+			imageSizesHeights.push(img.clientHeight);
+		}
+		else {
+			imageSizesWidths.push(img.clientWidth);
+		} 	
+	    
+	    $('.thumbnail').css({'transform': 'rotation(' + random + ')'})
 	}
 
-	imageSizes.sort();
+	imageSizesHeights.sort();
+    imageSizesWidths.sort();
 
-	var minHeight = imageSizes[0]
+	var minHeight = imageSizesHeights[0];
+	var minWidth = imageSizesWidths[0];
 
-	$('.thumbnail').css({'height': minHeight});
+
+	$('.thumbnail').css({'max-height': minHeight, 'max-width':minWidth});
 
 });
 
