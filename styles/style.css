@@ -36,6 +36,16 @@ body {
 	height: 100%;
 	}
 
+.thumbnail {
+	background-color: #AC48E5;
+	transform: rotate(20deg);
+	width: auto;
+    max-width: 150px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
 .image-wrap {
     max-height: 450px;
     overflow: hidden;
@@ -119,6 +129,9 @@ body {
     color: white;
 }
 
-.img-thumbnail{
-	background-color: #AC48E5;
+#wrapper {
+	background-color: transparent;
+	overflow: visible;
+	text-align: center;
+	margin: 20px;
 }
