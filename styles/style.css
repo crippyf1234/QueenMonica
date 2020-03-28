@@ -36,6 +36,12 @@ body {
 	height: 100%;
 	}
 
+.textSection {
+	background-color: white;
+	margin: 20px 10px 20px 10px;
+	padding: 5px 10px 5px 10px;
+}
+
 #kinks {
 	margin-bottom: 50px;
 }
@@ -77,7 +83,7 @@ body {
 	margin-bottom: 20px;
 	min-height:100%;
 	width: auto;
-	height: 100%
+	overflow: hidden;
 }   
 
 .linksContainer img {
@@ -86,19 +92,27 @@ body {
 	border-radius: 20px;
 }
 
+.linkImage {
+	float: left;
+	height:inherit;
+}
+
 .textContainer {
-	height: 500px;
-	display: inline-block;
 	width: 60%;
 	float: right;
-	text-align: left;
 	position: absolute;
 	border-radius: 20px;
 	word-wrap: break-word;
 }
 
+.text {
+   display: inline;
+   text-align: left;
+}
+
 .linksContainer a {
 	color: black;
+	font: default;
 }
 
 #links {
