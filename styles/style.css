@@ -1,4 +1,4 @@
-h2, h4, a {
+h2, h4, h6, a {
 	font-family: 'Alex Brush', cursive;
 	color: #AC48E5;
 }
@@ -9,7 +9,7 @@ h2, h4, a {
 		font-size: 20pt;
 }
 
-p {
+.extensiveText {
 	color:#000000;
 }
 
@@ -35,6 +35,21 @@ body {
 	background-position: fixed;
 	height: 100%;
 	}
+
+footer {
+	background-color: #1f1b1b;
+}
+
+.imageContainer {
+	display: flex;
+}
+
+.footerImages {
+	display: inline;
+	float: left;
+	height: auto;
+	flex: 25%;
+}
 
 .textSection {
 	background-color: white;
